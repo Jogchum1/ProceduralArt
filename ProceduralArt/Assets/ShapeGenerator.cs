@@ -6,6 +6,7 @@ public class ShapeGenerator
 {
     ShapeSettings settings;
     NoiseFilter[] noiseFilters;
+    public float elevation = 0;
 
     public ShapeGenerator(ShapeSettings settings)
     {
@@ -21,7 +22,7 @@ public class ShapeGenerator
     public Vector3 CalculatePointOnPlanet(Vector3 pointOnUnitSphere)
     {
         float firstLayerValue = 0;
-        float elevation = 0;
+        //float elevation = 0;
         
         if(noiseFilters.Length > 0)
         {
