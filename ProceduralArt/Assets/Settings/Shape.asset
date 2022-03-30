@@ -17,20 +17,20 @@ MonoBehaviour:
   - enabled: 1
     useFirstLayerAsMask: 0
     noiseSettings:
-      strenght: 0.15
+      strenght: 0.23
       numLayers: 4
-      baseRoughness: 1.84
-      roughness: 21.033697
-      persisence: 0.39
-      centre: {x: 0, y: 0, z: 0}
-      minValue: 0.97
+      baseRoughness: 4.439687
+      roughness: 2.01
+      persisence: 0.47
+      centre: {x: 2.9748018, y: 0, z: 0}
+      minValue: 1.1
   - enabled: 1
     useFirstLayerAsMask: 1
     noiseSettings:
-      strenght: 3.13
+      strenght: 0.42
       numLayers: 5
-      baseRoughness: 1.77
-      roughness: 0.01
-      persisence: 0.52
+      baseRoughness: 2.48
+      roughness: 0.3483737
+      persisence: 0.66
       centre: {x: 1.64, y: 0, z: 0}
       minValue: 1.16
