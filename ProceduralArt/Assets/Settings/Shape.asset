@@ -20,7 +20,7 @@ MonoBehaviour:
       strenght: 0.15
       numLayers: 4
       baseRoughness: 1.84
-      roughness: 2.14
+      roughness: 21.033697
       persisence: 0.39
       centre: {x: 0, y: 0, z: 0}
       minValue: 0.97
