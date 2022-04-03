@@ -29,7 +29,7 @@ public class PlanetAudio : MonoBehaviour
         //planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.centre.x += 0.01f * Time.deltaTime;
 
 
-        //planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness += Time.deltaTime * audioPeer._audioBand[4] * audioPeer._audioBand[3] * audioPeer._AmplitudeBuffer;
+        planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness += Time.deltaTime * audioPeer._audioBand[4] * audioPeer._audioBand[3] * audioPeer._AmplitudeBuffer;
 
         //for (int i = 0; i < audioPeer._audioBand.Length; i++)
         //{
@@ -41,12 +41,12 @@ public class PlanetAudio : MonoBehaviour
         //}
 
 
-        planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness += Mathf.Clamp(Time.deltaTime * audioPeer._audioBand[4], 0, 5);
+        //planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness += Mathf.Clamp(Time.deltaTime * audioPeer._audioBand[4] / 10, 0, 5);
 
-        if(audioPeer._audioBand[4] < 0.04 && planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness >= 0)
-        {
-            planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness -= 0.05f * Time.deltaTime;
-        }
+        //if (audioPeer._audioBand[4] < 0.04 && planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness >= 0)
+        //{
+        //    planet.GetComponent<Planet>().shapeSettings.noiseLayers[0].noiseSettings.simpleNoiseSettings.baseRoughness -= 0.02f * Time.deltaTime;
+        //}
 
 
 
